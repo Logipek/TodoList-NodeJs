@@ -1,48 +1,48 @@
 # Todo List MVC Application
 
-Une application de gestion de tâches moderne et intuitive construite avec JavaScript vanilla, suivant le pattern MVC et utilisant Webpack.
+A modern and intuitive task management application built with vanilla JavaScript, following the MVC pattern and using Webpack.
 
-## 🌟 Fonctionnalités
+## 🌟 Features
 
-- ✨ Interface utilisateur moderne inspirée de shadcn/ui
-- 📱 Design responsive
-- 🎯 Gestion complète des tâches (CRUD)
-- 🎨 Vues multiples :
-  - Liste classique
-  - Kanban avec drag & drop
-  - Calendrier interactif
-- 🔍 Filtrage et recherche avancés
-- 🏷️ Catégories personnalisables
-- 🌓 Thème clair/sombre
-- 🔔 Notifications pour les tâches à échéance
-- 💾 Persistance des données (localStorage)
+- ✨ Modern UI inspired by shadcn/ui
+- 📱 Responsive design
+- 🎯 Complete task management (CRUD)
+- 🎨 Multiple views:
+  - Classic list
+  - Kanban with drag & drop
+  - Interactive calendar
+- 🔍 Advanced filtering and search
+- 🏷️ Custom categories
+- 🌓 Light/dark theme
+- 🔔 Due date notifications
+- 💾 Data persistence (localStorage)
 
-## 🚀 Installation
+## 🚀 Getting Started
 
 ```bash
-# Cloner le repository
-git clone https://github.com/Logipek/TodoList-NodeJs.git
+# Clone the repository
+git clone https://github.com/Logipek/TodoList-NodeJs/todo-mvc.git
 
-# Accéder au dossier
+# Navigate to folder
 cd TodoList-NodeJs
 
-# Installer les dépendances
+# Install dependencies
 npm install
 ```
 
-## 🔧 Configuration
+## 🔧 Setup
 
-### Prérequis
-- Node.js (v14 ou supérieur)
-- npm (v6 ou supérieur)
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-### Dépendances principales
+### Key Dependencies
 - Webpack (bundling)
-- Tailwind CSS (styles)
-- FullCalendar (vue calendrier)
-- Babel (compilation JavaScript)
+- Tailwind CSS (styling)
+- FullCalendar (calendar view)
+- Babel (JavaScript compilation)
 
-## 📦 Structure du projet
+## 📦 Project Structure
 
 ```
 todo-mvc/
@@ -63,87 +63,185 @@ todo-mvc/
 └── README.md
 ```
 
-## 🚦 Utilisation
+## 🚦 Usage
 
-### Développement
+### Development
 
 ```bash
-# Lancer le serveur de développement
+# Start development server
 npm run start
 ```
-L'application sera accessible sur `http://localhost:9000`
+Application will be available at `http://localhost:8081`
 
 ### Production
 
 ```bash
-# Construire pour la production
+# Build for production
 npm run build
 ```
 
-## 💡 Fonctionnalités détaillées
+## 💡 Detailed Features
 
-### Gestion des tâches
-- Création de tâches avec titre, date d'échéance, priorité et catégorie
-- Modification et suppression de tâches
-- Marquage des tâches comme complétées
-- Drag & drop dans la vue Kanban
+### Task Management
+- Create tasks with title, due date, priority, and category
+- Edit and delete tasks
+- Mark tasks as completed
+- Drag & drop in Kanban view
 
-### Filtres et recherche
-- Filtrage par catégorie et priorité
-- Recherche en temps réel
-- Tri par date, priorité ou catégorie
+### Filters and Search
+- Filter by category and priority
+- Real-time search
+- Sort by date, priority, or category
 
-### Personnalisation
-- Thème clair/sombre personnalisable
-- Catégories personnalisables
-- Préférences sauvegardées localement
+### Customization
+- Customizable light/dark theme
+- Custom categories
+- Locally saved preferences
 
-## 🔒 Sécurité
+## 🔒 Security
 
-- Validation des entrées utilisateur
-- Sanitization des données
-- Protection XSS
-- Gestion sécurisée du stockage local
+- User input validation
+- Data sanitization
+- XSS protection
+- Secure local storage handling
 
-## 🛠 Technologies utilisées
+## 🛠 Tech Stack
 
 - JavaScript (ES6+)
-- Pattern MVC
+- MVC Pattern
 - Webpack 5
 - Tailwind CSS
 - FullCalendar
 - LocalStorage API
 - Notifications API
 
-## 📱 Compatibilité
+## 📱 Browser Support
 
-- ✅ Chrome (dernières versions)
-- ✅ Firefox (dernières versions)
-- ✅ Safari (dernières versions)
-- ✅ Edge (dernières versions)
-- 📱 Support mobile complet
+- ✅ Chrome (latest versions)
+- ✅ Firefox (latest versions)
+- ✅ Safari (latest versions)
+- ✅ Edge (latest versions)
+- 📱 Full mobile support
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📋 Development Guidelines
+
+### Code Style
+- Use ES6+ features
+- Follow MVC pattern
+- Maintain clean code principles
+- Comment complex logic
+- Use meaningful variable names
+
+### Testing
+```bash
+# Run tests
+npm test
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+### Building
+```bash
+# Development build
+npm run build:dev
+
+# Production build
+npm run build:prod
+```
+
+## 🐛 Known Issues
+
+- None currently reported
+
+## 📈 Future Improvements
+
+- [ ] Add task recurrence
+- [ ] Implement user authentication
+- [ ] Add data export/import
+- [ ] Create mobile app version
+- [ ] Add team collaboration features
 
 ## 📝 License
 
-Distribué sous la licence MIT. Voir `LICENSE` pour plus d'informations.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📮 Contact
 
-Logipek - https://hugo-damion.me/
+Logipek - [hugo-damion.me](https://hugo-damion.me)
 
-Lien du projet : https://github.com/Logipek/TodoList-NodeJs
+Project Link: https://github.com/Logipek/TodoList-NodeJs
 
-## 🙏 Remerciements
+## 🙏 Acknowledgments
 
-- [Tailwind CSS](https://tailwindcss.com)
-- [shadcn/ui](https://ui.shadcn.com)
-- [FullCalendar](https://fullcalendar.io)
-- [Webpack](https://webpack.js.org)
+- [Tailwind CSS](https://tailwindcss.com) - Styling framework
+- [shadcn/ui](https://ui.shadcn.com) - UI inspiration
+- [FullCalendar](https://fullcalendar.io) - Calendar component
+- [Webpack](https://webpack.js.org) - Module bundler
+
+## 🔄 Changelog
+
+### [1.0.0] - 2024-01-31
+- Initial release
+- Basic task management features
+- Multiple view implementations
+- Theme support
+
+### [1.1.0] - Coming soon
+- Enhanced filtering
+- Performance improvements
+- Additional view options
+
+## ⚙️ Configuration Options
+
+```javascript
+// webpack.config.js example
+module.exports = {
+  // Configuration options
+};
+
+// tailwind.config.js example
+module.exports = {
+  // Theme configuration
+};
+```
+
+## 🆘 Troubleshooting
+
+### Common Issues
+
+1. **Installation Problems**
+   ```bash
+   npm cache clean --force
+   npm install
+   ```
+
+2. **Build Errors**
+   - Check Node.js version
+   - Verify all dependencies are installed
+   - Clear browser cache
+
+## 📚 API Documentation
+
+### TodoModel
+```javascript
+addTodo(todo)      // Add new todo
+updateTodo(id)     // Update existing todo
+deleteTodo(id)     // Delete todo
+toggleTodo(id)     // Toggle todo completion
+```
+
+### Events
+```javascript
+onTodoAdd          // Triggered when todo is added
+onTodoUpdate       // Triggered when todo is updated
+onTodoDelete       // Triggered when todo is deleted
+```
