@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List MVC</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>Todo List</h1>
+        <div class="theme-switch">
+          <button id="themeToggle">
+            <span class="light-theme">🌞</span>
+            <span class="dark-theme">🌙</span>
+          </button>
+        </div>
+
+        <div class="views-switch">
+          <button data-view="list" class="active">Liste</button>
+          <button data-view="kanban">Kanban</button>
+          <button data-view="calendar">Calendrier</button>
+        </div>
+
+        <div class="category-manager">
+          <input type="text" id="newCategoryInput"
+            placeholder="Nouvelle catégorie">
+          <button id="addCategory">+</button>
+        </div>
+      </header>
+
+      <main>
+        <div class="filters">
+          <select id="categoryFilter">
+            <option value>Toutes les catégories</option>
+          </select>
+          <select id="priorityFilter">
+            <option value>Toutes les priorités</option>
+            <option value="high">Haute</option>
+            <option value="medium">Moyenne</option>
+            <option value="low">Basse</option>
+          </select>
+          <select id="sortBy">
+            <option value>Trier par</option>
+            <option value="dueDate">Date d'échéance</option>
+            <option value="priority">Priorité</option>
+            <option value="category">Catégorie</option>
+          </select>
+          <input type="text" id="searchTodos" placeholder="Rechercher...">
+        </div>
+
+        <div id="todoForm" class="todo-form">
+          <input type="text" id="taskInput" placeholder="Nouvelle tâche"
+            required>
+          <input type="date" id="dueDate" required>
+          <select id="priority" required>
+            <option value="low">Basse</option>
+            <option value="medium">Moyenne</option>
+            <option value="high">Haute</option>
+          </select>
+          <select id="category" required>
+            <option value="work">Travail</option>
+            <option value="personal">Personnel</option>
+            <option value="shopping">Courses</option>
+          </select>
+          <button id="addTask">Ajouter</button>
+        </div>
+
+        <div id="viewContainer"></div>
+      </main>
+    </div>
+  </body>
+</html>
